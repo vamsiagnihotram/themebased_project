@@ -9,19 +9,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>news_feed</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+  .topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+        }</style>
   </head>
     
   <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navigate you?</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+ 
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -29,7 +34,7 @@
         <a class="nav-link" href="#">News_feed<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="landing.html">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,10 +49,9 @@
         </div>
       </li>
       </ul>
-    <form class="form-inline my-2 my-lg-0">
-     <label>user : .....</label>
-    </form>
-  </div>
+    <div class="topright">user : _...from d.b_
+        
+      </div></div>
 </nav>
       
 <div class="jumbotron jumbotron-fluid" style="background-color:orange">
@@ -66,22 +70,46 @@
 <p>description 2...................</p>
 <div class="callout">
 <ul class="menu simple">
-<li><a href="#">Author: Mike Mikers</a></li>
-<li><div> 
+<a href="#">Author: Mike Mikers</a>
+<div> 
     
-    <div class="container">
-        <p><a href="#">
-          <span class="glyphicon glyphicon-heart" style="align-self: center" ></span>
+    <p><a href="#" class="btn btn-info ">
+          <span class="glyphicon glyphicon-thumbs-up"></span> up_vote
+        </a><a href="#" class="btn btn-info">
+          <span class="glyphicon glyphicon-thumbs-down"></span> down_vote
         </a>
-        </p></div>
+      </p>
     <form class="form-horizontal" role="form">
-            <h4>comments</h4>
+        
+        <div class="container">
+  
+  <!-- Trigger the modal with a button -->
+            <p align="left"><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Open previous comments</button></p>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <p>comment 1
+            comment 2</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
             <div class="form-group" style="padding:14px;">
             <textarea class="form-control" placeholder="comment"></textarea>
                                     </div>
         <button class="btn btn-primary pull-right" type="button" >add </button><ul class="list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
                                   </form>
-                              </div></li>
+                              </div>
 </ul>
 </div>
        </div>
